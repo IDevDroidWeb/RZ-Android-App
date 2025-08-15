@@ -1,0 +1,31 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">ReZone</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_loading">Loading...</string>
+
+    <!-- Onboarding Screens -->
+    <string name="onboarding_title_1">Find Your Dream Home</string>
+    <string name="onboarding_desc_1">Browse thousands of properties and find the perfect one for you</string>
+    <string name="onboarding_title_2">Sell or Rent Easily</string>
+    <string name="onboarding_desc_2">List your property and reach potential buyers quickly</string>
+    <string name="onboarding_title_3">Secure Transactions</string>
+    <string name="onboarding_desc_3">Safe and reliable payment system for all your transactions</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+    <!-- Login Screens -->
+    <string name="login_with_phone">Login with Phone</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+
+    <string name="mapbox_api_key">xxx-xxx-xxx</string>
+    <!-- Add all other strings from all screens -->
+</resources>
