@@ -5,44 +5,77 @@
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 
-    <!-- Base application theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/backgroundLight</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Base App Theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/backgroundLight</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <!-- Button Styles -->
-    <style name="PrimaryButton" parent="Widget.AppCompat.Button.Colored">
+    <!-- ================= BUTTON STYLES ================= -->
+    <style name="Widget.App.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@drawable/bg_primary_button</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="DisabledButton" parent="Widget.AppCompat.Button">
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@drawable/bg_disabled_button</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:textAllCaps">false</item>
+    <style name="Widget.App.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorSecondary</item>
+        <item name="android:textColor">@color/colorSecondary</item>
     </style>
 
-    <!-- Text Styles -->
-    <style name="TextAppearance.Title">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/colorTextPrimary</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
+    <style name="Widget.App.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!-- ================= TEXT STYLES ================= -->
+    <style name="TextHeading" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubheading" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="TextBody" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="TextCaption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/textHint</item>
+    </style>
+
+    <!-- ================= INPUT STYLES ================= -->
+    <style name="Widget.App.Input.Text" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@color/textHint</item>
+    </style>
+
+    <style name="Widget.App.Input.Password" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorSecondary</item>
+        <item name="hintTextColor">@color/textHint</item>
+        <item name="passwordToggleEnabled">true</item>
+    </style>
+
+    <!-- ================= CARD STYLE ================= -->
+    <style name="Widget.App.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:background">@color/backgroundLight</item>
+    </style>
+
+    <!-- ================= DIALOG STYLE ================= -->
+    <style name="Widget.App.Dialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:textColor">@color/textPrimary</item>
     </style>
 </resources>

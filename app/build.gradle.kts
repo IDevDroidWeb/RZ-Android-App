@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.yousefh.rezone"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.yousefh.rezone"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -29,6 +29,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
 }
 
 dependencies {
@@ -62,8 +67,10 @@ dependencies {
     implementation(libs.firebase.messaging)
 
     // Mapbox
-    implementation(libs.mapbox.android.sdk)
-    implementation(libs.mapbox.android.plugin.annotation.v9)
+    //implementation(libs.mapbox.android.sdk)
+    //implementation(libs.mapbox.android.plugin.annotation.v9)
+    //implementation(libs.android.ndk27)
+    //implementation("com.mapbox.maps:android:11.14.1")
 
     // Image Loading
     implementation(libs.glide)
@@ -77,5 +84,4 @@ dependencies {
     // Other
     implementation(libs.circleimageview)
     implementation(libs.smartmaterialspinner)
-    implementation(libs.imagepicker)
 }

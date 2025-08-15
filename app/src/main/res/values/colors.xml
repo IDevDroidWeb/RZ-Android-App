@@ -1,22 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#5AC7BD</color>
-    <color name="colorPrimaryDark">#0C766C</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorButtonDisabled">#F5F6F8</color>
-    <color name="colorTextPrimary">#212121</color>
-    <color name="colorTextSecondary">#757575</color>
-    <color name="colorDivider">#BDBDBD</color>
-    <color name="colorBackground">#FAFAFA</color>
-    <color name="colorError">#F44336</color>
-    <color name="colorSuccess">#4CAF50</color>
-    <color name="colorWarning">#FFC107</color>
+<!-- Primary Brand Colors -->
+<color name="colorPrimary">#5AC7BD</color> <!-- Blue -->
+<color name="colorSecondary">#388E3C</color> <!-- Green -->
+<color name="colorAccent">#FFC107</color> <!-- Amber -->
 
-    <!-- Dark mode colors -->
-    <color name="darkColorPrimary">#121212</color>
-    <color name="darkColorPrimaryDark">#000000</color>
-    <color name="darkColorAccent">#BB86FC</color>
-    <color name="darkTextPrimary">#E0E0E0</color>
-    <color name="darkTextSecondary">#9E9E9E</color>
-    <color name="darkBackground">#121212</color>
+<!-- Text Colors -->
+<color name="textPrimary">#212121</color> <!-- Dark Gray -->
+<color name="textSecondary">#757575</color> <!-- Medium Gray -->
+<color name="textHint">#9E9E9E</color> <!-- Light Gray -->
+
+<!-- Background Colors -->
+<color name="backgroundLight">#FFFFFF</color> <!-- White -->
+<color name="backgroundDark">#121212</color> <!-- Dark Theme BG -->
+
+<!-- Status Colors -->
+<color name="statusSuccess">#4CAF50</color> <!-- Green -->
+<color name="statusError">#F44336</color> <!-- Red -->
+<color name="statusWarning">#FF9800</color> <!-- Orange -->
+
+<!-- Map Marker Colors -->
+<color name="markerDefault">#2196F3</color> <!-- Blue -->
+<color name="markerHighlight">#E91E63</color> <!-- Pink -->
+<color name="markerSelected">#673AB7</color> <!-- Deep Purple -->
 </resources>
