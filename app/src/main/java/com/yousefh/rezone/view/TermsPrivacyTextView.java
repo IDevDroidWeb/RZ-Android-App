@@ -1,7 +1,6 @@
-package com.yousefh.rezone.utils;
+package com.yousefh.rezone.view;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;

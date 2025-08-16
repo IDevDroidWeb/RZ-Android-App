@@ -3,16 +3,182 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:paddingTop="@dimen/_19sdp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+    <Button
+        android:id="@+id/backBtn"
+        style="@style/Widget.App.Button.Image"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:padding="0dp"
+        app:icon="@drawable/arrow_left"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="@dimen/_24sdp"
+        app:iconTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="@string/log_in_your_account"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/backBtn">
+
+        <TextView
+            android:id="@+id/phoneTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_bold"
+            android:text="@string/phone"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TFPhone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_field_background"
+            android:hint="@string/phone_hint"
+            android:paddingTop="@dimen/_1sdp"
+            android:textColorHint="@color/textHint"
+            app:boxCornerRadiusBottomEnd="@dimen/_16sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_16sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_16sdp"
+            app:boxCornerRadiusTopStart="@dimen/_16sdp"
+            app:boxStrokeColor="@color/textFieldOutline"
+            app:boxStrokeErrorColor="@android:color/holo_red_light"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="@dimen/_1sdp"
+            app:endIconMode="clear_text"
+            app:errorTextColor="@android:color/holo_red_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneTxt">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_regular"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/textHint"
+                android:textSize="@dimen/_11ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/passwordTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_bold"
+            android:text="@string/password"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TFPhone" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TFPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_field_background"
+            android:hint="@string/password_hint"
+            android:paddingTop="@dimen/_1sdp"
+            android:textColorHint="@color/textHint"
+            app:boxCornerRadiusBottomEnd="@dimen/_16sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_16sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_16sdp"
+            app:boxCornerRadiusTopStart="@dimen/_16sdp"
+            app:boxStrokeColor="@color/textFieldOutline"
+            app:boxStrokeErrorColor="@android:color/holo_red_light"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="@dimen/_1sdp"
+            app:endIconMode="password_toggle"
+            app:errorTextColor="@android:color/holo_red_light"
+            app:hintTextColor="@color/textHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTxt">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_regular"
+                android:inputType="textPassword"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/textHint"
+                android:textSize="@dimen/_11ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgetPasswordTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_bold"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TFPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Widget.App.Button.Disable"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:text="@string/login"
+        android:textSize="@dimen/_12ssp"
+        android:enabled="false"
+        android:fontFamily="@font/cairo_semi_bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@id/signupText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.yousefh.rezone.view.NewUserTextView
+        android:id="@+id/signupText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/cairo_regular"
+        android:padding="@dimen/_6sdp"
+        android:textSize="@dimen/_11ssp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

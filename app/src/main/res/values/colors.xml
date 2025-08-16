@@ -1,25 +1,42 @@
 <resources>
-<!-- Primary Brand Colors -->
-<color name="colorPrimary">#5AC7BD</color> <!-- Blue -->
-<color name="colorSecondary">#388E3C</color> <!-- Green -->
-<color name="colorAccent">#FFC107</color> <!-- Amber -->
+    <!-- Primary Brand Colors -->
+    <color name="colorPrimary">#5AC7BD</color> <!-- Blue -->
+    <color name="colorSecondary">#388E3C</color> <!-- Green -->
+    <color name="colorAccent">#FFC107</color> <!-- Amber -->
 
-<!-- Text Colors -->
-<color name="textPrimary">#212121</color> <!-- Dark Gray -->
-<color name="textSecondary">#757575</color> <!-- Medium Gray -->
-<color name="textHint">#9E9E9E</color> <!-- Light Gray -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 
-<!-- Background Colors -->
-<color name="backgroundLight">#FFFFFF</color> <!-- White -->
-<color name="backgroundDark">#121212</color> <!-- Dark Theme BG -->
+    <!-- Text Colors -->
+    <color name="textPrimary">#4D4B4E</color> <!-- Dark Gray -->
+    <color name="textSecondary">#4D4B4E</color> <!-- Medium Gray -->
+    <color name="textHint">#C6C6C6</color> <!-- Light Gray -->
 
-<!-- Status Colors -->
-<color name="statusSuccess">#4CAF50</color> <!-- Green -->
-<color name="statusError">#F44336</color> <!-- Red -->
-<color name="statusWarning">#FF9800</color> <!-- Orange -->
+    <!-- Background Colors -->
+    <color name="backgroundLight">#FAFAFA</color> <!-- White -->
+    <color name="backgroundDark">#121212</color> <!-- Dark Theme BG -->
 
-<!-- Map Marker Colors -->
-<color name="markerDefault">#2196F3</color> <!-- Blue -->
-<color name="markerHighlight">#E91E63</color> <!-- Pink -->
-<color name="markerSelected">#673AB7</color> <!-- Deep Purple -->
+    <!-- Status Colors -->
+    <color name="statusSuccess">#4CAF50</color> <!-- Green -->
+    <color name="statusError">#F44336</color> <!-- Red -->
+    <color name="statusWarning">#FF9800</color> <!-- Orange -->
+
+    <!-- Toast Colors -->
+    <color name="toastSuccess">#CC50DC54</color> <!-- Green -->
+    <color name="toastError">#CCD03A2E</color> <!-- Red -->
+    <color name="toastWarning">#CCD3830E</color> <!-- Orange -->
+
+    <!-- Map Marker Colors -->
+    <color name="markerDefault">#2196F3</color> <!-- Blue -->
+    <color name="markerHighlight">#E91E63</color> <!-- Pink -->
+    <color name="markerSelected">#673AB7</color> <!-- Deep Purple -->
+
+    <!-- Button state -->
+    <color name="colorButtonDisabled">#F5F6F8</color>
+
+    <!-- Fields state -->
+    <color name="textFieldOutline">#E3E3E3</color>
+    <color name="textFieldIcon">#8D8C8E</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#E3E3E3</color>
+
 </resources>

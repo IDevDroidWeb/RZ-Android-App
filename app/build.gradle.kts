@@ -84,4 +84,5 @@ dependencies {
     // Other
     implementation(libs.circleimageview)
     implementation(libs.smartmaterialspinner)
+    implementation(libs.dotsindicator)
 }

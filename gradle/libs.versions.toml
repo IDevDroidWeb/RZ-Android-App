@@ -8,6 +8,7 @@ circleimageview = "3.1.0"
 compiler = "4.12.0"
 constraintlayoutVersion = "2.2.1"
 converterGson = "2.9.0"
+dotsindicator = "5.1.0"
 espressoCoreVersion = "3.7.0"
 firebaseBom = "34.1.0"
 glide = "4.16.0"
@@ -42,6 +43,7 @@ compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compi
 constraintlayout-v211 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
 appcompat-v131 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
 espresso-core-v340 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
 firebase-auth = { module = "com.google.firebase:firebase-auth" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }

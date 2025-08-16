@@ -41,6 +41,24 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".activities.auth.OnboardingActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.ChooseRegisterWayActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.auth.LoginPhoneActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.LoginEmailActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+
     </application>
 
 </manifest>
