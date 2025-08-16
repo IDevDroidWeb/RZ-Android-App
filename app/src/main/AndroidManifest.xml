@@ -59,6 +59,23 @@
             android:theme="@style/AppTheme"
             android:exported="false" />
 
+        <activity
+            android:name=".activities.auth.ForgotPasswordActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.OtpActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.ResetPasswordActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+        <activity
+            android:name=".activities.auth.PasswordChangedActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+
     </application>
 
 </manifest>

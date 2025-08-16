@@ -85,4 +85,6 @@ dependencies {
     implementation(libs.circleimageview)
     implementation(libs.smartmaterialspinner)
     implementation(libs.dotsindicator)
+    implementation(libs.pinview)
+    implementation(libs.android.gif.drawable)
 }

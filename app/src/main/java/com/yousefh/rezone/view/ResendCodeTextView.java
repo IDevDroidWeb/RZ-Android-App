@@ -15,31 +15,31 @@ import androidx.core.content.ContextCompat;
 
 import com.yousefh.rezone.R;
 
-public class NewUserTextView extends AppCompatTextView {
+public class ResendCodeTextView extends AppCompatTextView {
 
-    public interface OnSignupClickListener {
-        void onSignupClick();
+    public interface OnResendClickListener {
+        void onResendClick();
     }
 
-    private OnSignupClickListener listener;
+    private OnResendClickListener listener;
 
-    public NewUserTextView(Context context) {
+    public ResendCodeTextView(Context context) {
         super(context);
         init();
     }
 
-    public NewUserTextView(Context context, AttributeSet attrs) {
+    public ResendCodeTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public NewUserTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ResendCodeTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
 
     private void init() {
-        String text = "New to ReZone? Signup";
+        String text = "Didn’t receive the code? Resend code";
         SpannableString spannable = new SpannableString(text);
 
         int colorClickable = ContextCompat.getColor(getContext(), R.color.colorPrimary);
@@ -47,10 +47,10 @@ public class NewUserTextView extends AppCompatTextView {
 
         setTextColor(colorBackground);
 
-        // تحديد كلمة Signup
-        String signup = "Signup";
-        int start = text.indexOf(signup);
-        int end = start + signup.length();
+        // تحديد كلمة Resend code
+        String clickablePart = "Resend code";
+        int start = text.indexOf(clickablePart);
+        int end = start + clickablePart.length();
 
         // لون الكلمة القابلة للضغط
         spannable.setSpan(new ForegroundColorSpan(colorClickable), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -59,7 +59,7 @@ public class NewUserTextView extends AppCompatTextView {
         spannable.setSpan(new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                if (listener != null) listener.onSignupClick();
+                if (listener != null) listener.onResendClick();
             }
         }, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
@@ -68,7 +68,7 @@ public class NewUserTextView extends AppCompatTextView {
         setTextAlignment(TEXT_ALIGNMENT_CENTER);
     }
 
-    public void setOnSignupClickListener(OnSignupClickListener listener) {
+    public void setOnResendClickListener(OnResendClickListener listener) {
         this.listener = listener;
     }
 }

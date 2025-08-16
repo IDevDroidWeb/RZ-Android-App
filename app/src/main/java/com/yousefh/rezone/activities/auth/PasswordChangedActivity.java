@@ -1,5 +1,6 @@
 package com.yousefh.rezone.activities.auth;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -16,5 +17,11 @@ public class PasswordChangedActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         binding = ActivityPasswordChangedBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.loginBtn.setOnClickListener(v -> {
+            startActivity(new Intent(this, LoginPhoneActivity.class));
+            finishAffinity(); // Clear all previous activities
+        });
+
     }
 }
