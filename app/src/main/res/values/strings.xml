@@ -54,4 +54,6 @@
     <string name="full_name">Full name</string>
     <string name="having_profile_photo_helps_people">Having a profile photo helps other people recognize you</string>
     <string name="upload_photo">Upload Photo</string>
+    <string name="location">Location</string>
+    <string name="location_coordinates_format">Location coordinates format</string>
 </resources>

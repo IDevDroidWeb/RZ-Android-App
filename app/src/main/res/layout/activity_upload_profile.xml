@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/backgroundLight"
     android:layout_width="match_parent"
+    android:paddingTop="@dimen/_19sdp"
     android:layout_height="match_parent">
 
     <Button

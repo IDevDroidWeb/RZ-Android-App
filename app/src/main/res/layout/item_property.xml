@@ -1,18 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_marginBottom="@dimen/_12sdp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="@dimen/_1sdp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_6sdp"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_123sdp"
+            android:background="@drawable/onboarding_1"
+            app:iss_auto_cycle="true"
+            app:iss_delay="2500"
+            app:iss_period="1000"
+            app:iss_text_align="CENTER"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/favoriteBtn"
+            android:layout_width="@dimen/_31sdp"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/propertyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/cairo_bold"
+            android:text="Luxury Villa in Building A"
+            android:textAlignment="textStart"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageSlider" />
+
+        <ImageView
+            android:id="@+id/icLoc"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_margin="@dimen/_6sdp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/propertyTitle" />
+
+        <TextView
+            android:id="@+id/propertyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/cairo_semi_bold"
+            android:text="Alma, Sheikh Zayed, Egypt"
+            android:textAlignment="textStart"
+            android:textColor="@color/textFieldIcon"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/propertyTitle"
+            app:layout_constraintTop_toBottomOf="@id/propertyTitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RVFacilities"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_19sdp"
+            android:layout_margin="@dimen/_6sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/propertyLocation"
+            tools:itemCount="3" />
+
+        <TextView
+            android:id="@+id/propertyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_semi_bold"
+            android:text="3,937,00"
+            android:layout_margin="@dimen/_6sdp"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/RVFacilities" />
+
+        <TextView
+            android:id="@+id/propertyPriceCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_semi_bold"
+            android:text="/KWD"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toEndOf="@id/propertyPrice"
+            app:layout_constraintBottom_toBottomOf="@id/propertyPrice"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

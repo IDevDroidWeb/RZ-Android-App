@@ -85,9 +85,19 @@
         <item name="android:textColor">@color/textPrimary</item>
     </style>
 
-    <!-- ================= CHECKBOX STYLE ================= -->
-    <style name="CustomCheckboxBrand" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
-        <item name="android:button">@drawable/checkbox_selector</item>
-        <item name="android:background">@android:color/transparent</item>
+    <!-- ================= Bottom Navigation STYLE ================= -->
+    <style name="CustomBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/BottomNavActive</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavInactive</item>
+    </style>
+
+    <style name="BottomNavActive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/cairo_bold</item>
+    </style>
+
+    <style name="BottomNavInactive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/cairo_semi_bold</item>
     </style>
 </resources>

@@ -1,5 +1,7 @@
 package com.yousefh.rezone.interfaces;
 
-public class OnPropertyClickListener {
+import com.yousefh.rezone.models.Property;
 
+public interface OnPropertyClickListener {
+    void onPropertyClick(Property property);
 }

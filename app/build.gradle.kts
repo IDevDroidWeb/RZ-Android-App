@@ -67,6 +67,7 @@ dependencies {
     implementation(libs.firebase.messaging)
 
     // Mapbox
+    implementation("com.mapbox.maps:android:11.14.2")
     //implementation(libs.mapbox.android.sdk)
     //implementation(libs.mapbox.android.plugin.annotation.v9)
     //implementation(libs.android.ndk27)
@@ -87,4 +88,5 @@ dependencies {
     implementation(libs.dotsindicator)
     implementation(libs.pinview)
     implementation(libs.android.gif.drawable)
+    implementation(libs.imageslideshow)
 }
