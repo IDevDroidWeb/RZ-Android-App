@@ -60,7 +60,7 @@ public class OnboardingActivity extends AppCompatActivity {
         viewPager.setAdapter(onboardingAdapter);
 
         // Setup dots indicator
-        // You'll implement this in your XML with a custom view or use a library
+        // TODO: You'll implement this in your XML with a custom view or use a library
 
         // Button listeners
         btnNext.setOnClickListener(v -> {

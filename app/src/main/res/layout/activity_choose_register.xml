@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.yousefh.rezone.view.SignupClickableTextView
+    <com.yousefh.rezone.view.ClickableTextView
         android:id="@+id/signupText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

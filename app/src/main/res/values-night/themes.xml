@@ -37,7 +37,8 @@
     </style>
 
     <style name="Widget.App.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
-        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
     <!-- ================= TEXT STYLES ================= -->
@@ -82,5 +83,11 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <!-- ================= CHECKBOX STYLE ================= -->
+    <style name="CustomCheckboxBrand" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 </resources>

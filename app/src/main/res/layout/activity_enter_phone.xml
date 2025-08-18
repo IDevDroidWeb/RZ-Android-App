@@ -4,15 +4,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight"
+    android:paddingTop="@dimen/_19sdp">
+
+    <Button
+        android:id="@+id/backBtn"
+        style="@style/Widget.App.Button.Image"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:padding="0dp"
+        app:icon="@drawable/arrow_left"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="@dimen/_24sdp"
+        app:iconTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="@string/create_a_new_account"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+    <TextView
+        android:id="@+id/phoneTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="@string/phone"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backBtn" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:cardBackgroundColor="@color/backgroundLight"
+        app:cardCornerRadius="@dimen/_32sdp"
+        app:layout_constraintTop_toBottomOf="@id/phoneTxt"
+        app:strokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/backgroundLight">
+
+            <ImageView
+                android:id="@+id/countryFlag"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:src="@drawable/flag_eg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/countryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:text="+20"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@id/countryFlag"
+                app:layout_constraintStart_toEndOf="@id/countryFlag"
+                app:layout_constraintTop_toTopOf="@id/countryFlag" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@color/mtrl_textinput_default_box_stroke_color"
+                app:layout_constraintBottom_toBottomOf="@id/countryFlag"
+                app:layout_constraintStart_toEndOf="@id/countryCode"
+                app:layout_constraintTop_toTopOf="@id/countryFlag" />
+
+            <EditText
+                android:id="@+id/TFPhone"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:autofillHints="phone"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:hint="@string/phone_hint"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/countryCode"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        style="@style/Widget.App.Button.Disable"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:enabled="false"
+        android:fontFamily="@font/cairo_semi_bold"
+        android:text="@string/continue_text"
+        android:textSize="@dimen/_12ssp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@id/loginText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.yousefh.rezone.view.ClickableTextView
+        android:id="@+id/loginText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/cairo_regular"
+        android:padding="@dimen/_6sdp"
+        android:textSize="@dimen/_11ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

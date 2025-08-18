@@ -49,7 +49,8 @@
     </style>
 
     <style name="Widget.App.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
-        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
     <style name="Widget.App.Button.Image" parent="Widget.MaterialComponents.Button.TextButton">
@@ -98,4 +99,7 @@
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="android:textColor">@color/textPrimary</item>
     </style>
+
+    <!-- ================= CHECKBOX STYLE ================= -->
+
 </resources>

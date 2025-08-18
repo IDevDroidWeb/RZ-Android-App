@@ -1,5 +1,8 @@
 package com.yousefh.rezone.interfaces;
 
-public class OnCountrySelectedListener {
+import com.yousefh.rezone.models.Country;
 
+@FunctionalInterface
+public interface OnCountrySelectedListener {
+    void onCountrySelected(Country country);
 }

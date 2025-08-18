@@ -86,7 +86,7 @@ public class OtpActivity extends AppCompatActivity {
     private void verifyOtp() {
         String otp = Objects.requireNonNull(binding.pinView.getText()).toString();
 
-        if (otp.length() != 6) {
+        if (otp.length() != 4) {
             ShowToast.success(this, "Please enter a valid 6-digit code");
             return;
         }
@@ -94,7 +94,10 @@ public class OtpActivity extends AppCompatActivity {
         // TODO: Implement OTP verification
         ShowToast.success(this, "Verifying OTP: " + otp);
 
-        if ("reset_password".equals(getIntent().getStringExtra("purpose"))) {
+        if ("signup".equals(getIntent().getStringExtra("purpose"))) {
+            startActivity(new Intent(this, ContinueSignupActivity.class)
+                    .putExtra("phone", getIntent().getStringExtra("phone")));
+        } else if ("reset_password".equals(getIntent().getStringExtra("purpose"))) {
             startActivity(new Intent(this, ResetPasswordActivity.class));
         } else {
             // Handle other purposes (e.g., signup verification)

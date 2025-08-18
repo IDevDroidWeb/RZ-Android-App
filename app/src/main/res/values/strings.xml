@@ -49,4 +49,9 @@
     <string name="your_password_has_been_changed_successfully">Your password has been changed successfully</string>
     <string name="resend_in">"Resend in "</string>
     <string name="resend_code">Resend Code</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="continue_text">Continue</string>
+    <string name="full_name">Full name</string>
+    <string name="having_profile_photo_helps_people">Having a profile photo helps other people recognize you</string>
+    <string name="upload_photo">Upload Photo</string>
 </resources>
